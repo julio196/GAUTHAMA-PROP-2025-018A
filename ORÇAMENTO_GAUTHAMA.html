@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta Comercial - Obra Gauthama</title>
+    
+    <!-- Link do Tailwind CSS CORRIGIDO -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Fundo do corpo mais suave */
+            background-color: #F9FAFB; /* bg-gray-50 */
+        }
+        
+        /* --- OTIMIZAÇÕES DE IMPRESSÃO --- */
+        @page {
+            size: A4 portrait; /* Sugere o tamanho da página A4 */
+            margin: 2cm; /* Define uma margem de impressão padrão */
+        }
+
+        /* Estilos de Impressão */
+        @media print {
+            /* Esconde o botão de impressão e o rodapé */
+            .print-hidden {
+                display: none !important;
+            }
+            /* Remove sombras e ajusta margens do container principal */
+            .print-container {
+                box-shadow: none !important;
+                border: none !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                max-width: 100% !important;
+            }
+            /* Garante que o body não tenha padding na impressão */
+            body {
+                padding: 0 !important;
+                margin: 0 !important;
+                background-color: #ffffff !important;
+            }
+
+            /* --- NOVAS REGRAS: Evita quebras de página --- */
+            section, .option-card {
+                page-break-inside: avoid; /* Tenta não quebrar seções e os cartões de opção */
+            }
+            tr, h2, h3, h4 {
+                page-break-after: avoid; /* Tenta não quebrar logo após um título ou em uma linha da tabela */
+            }
+            
+            /* Assegura que cores de fundo (gradientes, etc.) sejam impressas */
+            .bg-gradient-to-r, .bg-green-50, .bg-gray-50 {
+                -webkit-print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    
+
+<div class="max-w-5xl mx-auto mb-4 text-right print-hidden">
+        <button onclick="window.print()" class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md shadow-sm text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+            </svg>
+            Imprimir / Salvar PDF
+        </button>
+        
+
+<p class="text-xs text-gray-400 mt-1 print-hidden">
+            (Se o botão não funcionar no "Preview", abra o HTML exportado).
+        </p>
+    </div>
+
+    
+
+<div class="max-w-5xl mx-auto bg-white shadow-lg rounded-xl overflow-hidden print-container">
+        
+        
+
+<header class="p-6 md:p-10 bg-white border-b border-gray-200">
+            
+
+<img src="https://i.postimg.cc/KzhWpCHZ/solucoes-integradas-para-o-seguimento-de-acustica.png" alt="Logotipo ITEX Brasil" class="h-12 md:h-14 mb-6 object-contain object-left">
+
+            
+
+<h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight">Proposta Comercial</h1>
+            <p class="mt-2 text-lg text-gray-600">Referente à Instalação de Soluções Acústicas</p>
+            
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div>
+                    <span class="text-sm font-medium text-gray-500">CLIENTE</span>
+                    <p class="text-lg font-semibold text-gray-900">Obra Gauthama</p>
+                </div>
+                <div>
+                    <span class="text-sm font-medium text-gray-500">DATA DA PROPOSTA</span>
+                    <p class="text-lg font-semibold text-gray-900">23 de Outubro de 2025</p>
+                </div>
+                <div>
+                    <span class="text-sm font-medium text-gray-500">NOSSA REFERÊNCIA</span>
+                    <p class="text-lg font-semibold text-gray-900">#PROP-2025-018</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="p-6 md:p-10">
+            
+            
+
+<section>
+                
+
+<h2 class="text-2xl font-bold text-gray-900 border-b border-gray-200 pb-3 tracking-tight">1. Detalhamento dos Serviços e Custos</h2>
+                <p class="mt-4 text-gray-600">Abaixo estão os custos envolvidos no projeto. Os itens A e B são custos fixos, enquanto o item C possui o valor alterado de acordo com a opção de pagamento escolhida na seção 2.</p>
+                
+                <div class="mt-6 flow-root">
+                    <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                        <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+                            <table class="min-w-full divide-y divide-gray-200">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0">Item</th>
+                                        <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Descrição</th>
+                                        <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Valor (R$)</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200">
+                                    
+
+<tr class="hover:bg-gray-50 transition-colors duration-150">
+                                        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">A</td>
+                                        
+
+<td class="whitespace-normal px-3 py-4 text-sm text-gray-600">VALOR TOTAL ESTIMADO PARA AQUISIÇÃO DE MATERIAIS</td>
+                                        <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-600">R$ 11.867,00</td>
+                                    </tr>
+                                    
+
+<tr class="hover:bg-gray-50 transition-colors duration-150">
+                                        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">B</td>
+                                        <td class="whitespace-normal px-3 py-4 text-sm text-gray-600">EXECUÇÃO E MÃO DE OBRA</td>
+                                        <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-600">R$ 19.800,00</td>
+                                    </tr>
+                                    
+
+<tr class="hover:bg-gray-50 transition-colors duration-150">
+                                        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">C</td>
+                                        <td class="whitespace-normal px-3 py-4 text-sm text-gray-600">EXECUÇÃO - INSTALAÇÃO E MONTAGEM DE FECHAMENTOS FIXOS E PORTAS DE CORRER, ISOLADORAS SONORAS, COMPOSTAS DE VIDROS LAMINADOS E CAIXILHOS DE PVC</td>
+                                        <td class="whitespace-nowrap px-3 py-4 text-sm font-medium text-blue-600">Valor varia por opção</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="my-8 border-gray-200">
+
+            
+
+<section>
+                <h2 class="text-2xl font-bold text-gray-900 border-b border-gray-200 pb-3 tracking-tight">2. Opções de Pagamento e Valor Total</h2>
+                <p class="mt-4 text-gray-600">Abaixo estão as duas opções para o pagamento total do projeto.</p>
+
+                <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    
+
+<div class="option-card border border-gray-200 rounded-lg shadow-lg overflow-hidden flex flex-col transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl">
+                        
+
+<div class="p-5 bg-gradient-to-r from-blue-500 to-blue-600 flex justify-between items-center">
+                            <h3 class="text-xl font-bold text-white">OPÇÃO 1: Pagamento Faturado</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                        </div>
+                        
+                        <div class="p-6 flex-grow">
+                            <dl class="space-y-4">
+                                <div>
+                                    <dt class="text-sm font-medium text-gray-500">Item A (Materiais)</dt>
+                                    <dd class="text-lg font-semibold text-gray-800">R$ 11.867,00</dd>
+                                </div>
+                                <div>
+                                    <dt class="text-sm font-medium text-gray-500">Item B (Mão de Obra)</dt>
+                                    <dd class="text-lg font-semibold text-gray-800">R$ 19.800,00</dd>
+                                </div>
+                                <div>
+                                    <dt class="text-sm font-medium text-gray-500">Item C (Instalação e Portas)</dt>
+                                    <dd class="text-lg font-semibold text-gray-800">R$ 132.431,63</dd>
+                                </div>
+                            </dl>
+                            
+                            <hr class="my-5 border-gray-200">
+                            
+                            <h4 class="font-semibold text-gray-800">Condições de Pagamento (Opção 1)</h4>
+                            
+
+<div class="mt-4 border-t border-gray-200 divide-y divide-gray-200">
+                                <div class="py-3">
+                                    <p class="text-sm font-medium text-gray-900">Item A (Materiais)</p>
+                                    <p class="text-sm text-gray-600">À Combinar.</p>
+                                </div>
+                                <div class="py-3">
+                                    <p class="text-sm font-medium text-gray-900">Item B (Mão de Obra)</p>
+                                    <p class="text-sm text-gray-600">Sinal de 50% + 50% na entrega.</p>
+                                </div>
+                                <div class="py-3">
+                                    <p class="text-sm font-medium text-gray-900">Item C (Instalação)</p>
+                                    <p class="text-sm text-gray-600">Sinal de R$ 79.458,98 + 30DDL R$ 26.486,33 + 60DDL R$ 26.486,33.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-6 bg-gray-50 border-t border-gray-200 mt-auto">
+                            <span class="text-base font-medium text-gray-600">VALOR TOTAL (OPÇÃO 1)</span>
+                            
+
+<p class="text-3xl font-extrabold text-blue-600">R$ 164.098,63</p>
+                        </div>
+                    </div>
+                    
+                    
+
+<div class="option-card border border-gray-200 rounded-lg shadow-lg overflow-hidden flex flex-col transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl">
+                        
+
+<div class="p-5 bg-gradient-to-r from-green-500 to-green-600 flex justify-between items-center">
+                            <h3 class="text-xl font-bold text-white">OPÇÃO 2: Cartão de Crédito</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                            </svg>
+                        </div>
+                        
+                        
+
+<div class="p-6 flex-grow">
+                            
+                            
+
+<dl class="space-y-4">
+                                <div>
+                                    <dt class="text-sm font-medium text-gray-500">Item A (Materiais)</dt>
+                                    <dd class="text-lg font-semibold text-gray-800">R$ 11.867,00</dd>
+                                </div>
+                                <div>
+                                    <dt class="text-sm font-medium text-gray-500">Item B (Mão de Obra)</dt>
+                                    <dd class="text-lg font-semibold text-gray-800">R$ 19.800,00</dd>
+                                </div>
+                            </dl>
+                            
+                            <hr class="my-5 border-gray-200">
+
+                            
+                            
+
+<div class="bg-green-50 p-4 rounded-lg">
+                                <label for="parcelasSelector" class="block text-sm font-bold text-gray-900">Simular parcelamento do Item C:</label>
+                                <select id="parcelasSelector" class="mt-1 block w-full pl-3 pr-10 py-2 text-base font-semibold border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md">
+                                    
+
+</select>
+                            </div>
+                            
+                            <hr class="my-5 border-gray-200">
+                            
+                            <h4 class="font-semibold text-gray-800">Condições de Pagamento (Opção 2)</h4>
+                            
+
+<div id="condicoesOpcao2" class="mt-4 border-t border-gray-200 divide-y divide-gray-200">
+                                <div class="py-3">
+                                    <p class="text-sm font-medium text-gray-900">Item A (Materiais)</p>
+                                    <p class="text-sm text-gray-600">À Combinar.</p>
+                                </div>
+                                <div class="py-3">
+                                    <p class="text-sm font-medium text-gray-900">Item B (Mão de Obra)</p>
+                                    <p class="text-sm text-gray-600">Sinal de 50% + 50% na entrega.</p>
+                                </div>
+                                
+
+<div id="condicaoItemC" class="py-3">
+                                    <p class="text-sm font-medium text-gray-900">Item C (Instalação)</p>
+                                    <p class="text-sm text-gray-600">Selecione uma opção acima.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+<div class="p-6 bg-gray-50 border-t border-gray-200 mt-auto">
+                            <span class="text-base font-medium text-gray-600">VALOR TOTAL (OPÇÃO 2)</span>
+                            
+
+<p id="totalOpcao2" class="text-3xl font-extrabold text-green-600">R$ 31.667,00 + Item C</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            
+            <hr class="my-8 border-gray-200">
+
+            
+
+<section>
+                <h2 class="text-2xl font-bold text-gray-900 border-b border-gray-200 pb-3 tracking-tight">3. Anexos e Documentos de Referência</h2>
+                <p class="mt-4 text-gray-600">Para sua referência, os seguintes documentos detalham o escopo e as especificações técnicas do projeto.</p>
+                
+                
+
+<div class="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    
+                    
+
+<a href="https://drive.google.com/file/d/1F6Ltcc3nZjSXOy5b3TOabO-GeN51iaQi/view?usp=drive_link" target="_blank" class="block h-full bg-white border border-gray-200 rounded-lg p-4 hover:border-blue-400 hover:shadow-md transform hover:-translate-y-0.5 transition-all duration-200">
+                        <div class="flex items-center space-x-4">
+                            
+
+<svg class="h-8 w-8 text-red-600 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                            </svg>
+                            <div>
+                                
+
+<p class="font-semibold text-blue-600 hover:text-blue-700">Proposta ITEX 1602B - Portas Isolantes (Gauthama)</p>
+                                <p class="text-sm text-gray-500">Clique para abrir o documento (PDF)</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    
+
+<a href="https://drive.google.com/file/d/1heMyWrw4kR2VVGKAtcb5COOwHOoM6RZu/view?usp=drive_link" target="_blank" class="block h-full bg-white border border-gray-200 rounded-lg p-4 hover:border-blue-400 hover:shadow-md transform hover:-translate-y-0.5 transition-all duration-200">
+                        <div class="flex items-center space-x-4">
+                            
+
+<svg class="h-8 w-8 text-red-600 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                            </svg>
+                            <div>
+                                
+
+<p class="font-semibold text-blue-600 hover:text-blue-700">Proposta VGAC2508GNA001 - Portas Isolantes (Gauthama)</p>
+                                <p class="text-sm text-gray-500">Clique para abrir o documento (PDF)</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+            </section>
+            
+        </main>
+
+        
+
+<footer class="p-6 md:p-10 bg-gray-50 border-t border-gray-200 mt-10 print-hidden">
+            <div class="text-center">
+                <p class="text-lg font-semibold text-gray-700">Agradecemos pela oportunidade!</p>
+                <p class="mt-2 text-sm text-gray-500">Estamos à disposição para esclarecer qualquer dúvida.</p>
+                <p class="mt-4 text-sm text-gray-400">
+                    ITEX BRASIL LTDA - Soluções integradas para o segmento de acústica.<br>
+                    +55 11 98234-2858 | atendimento@itexbrasil.com.br | CNPJ 15.381.343/0001-10
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    
+
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+
+const VALOR_BASE_A = 11867.00;
+            const VALOR_BASE_B = 19800.00;
+            const VALOR_BASE_C_AVISTA = 132431.63;
+            
+            
+
+const TAXAS = {
+                1: 0.0,
+                4: 0.0869, 
+                5: 0.0949, 
+                6: 0.1029, 
+                7: 0.1372,
+                8: 0.1436, 
+                9: 0.15, 
+                10: 0.1564, 
+                11: 0.1614, 
+                12: 0.1663
+            };
+
+            
+
+const selector = document.getElementById('parcelasSelector');
+            
+
+const condicaoItemC_Div = document.getElementById('condicaoItemC');
+            const totalOpcao2 = document.getElementById('totalOpcao2');
+            const totalBaseTexto = formatCurrency(VALOR_BASE_A + VALOR_BASE_B) + " + Item C";
+
+            
+
+function formatCurrency(value) {
+                return value.toLocaleString('pt-BR', {
+                    style: 'currency',
+                    currency: 'BRL',
+                    minimumFractionDigits: 2
+                });
+            };
+
+            
+
+selector.innerHTML = '<option value="0">Selecione o parcelamento...</option>';
+            Object.keys(TAXAS).forEach(numParcelas => {
+                // MODIFICAÇÃO: Pula a opção de 1 parcela (À vista)
+                if (numParcelas != 1) {
+                    let text;
+                    const taxa = TAXAS[numParcelas];
+                    const novoValorItemC = VALOR_BASE_C_AVISTA * (1 + taxa);
+                    const valorDaParcela = novoValorItemC / numParcelas;
+                    
+                    text = `${numParcelas}x de ${formatCurrency(valorDaParcela)}`;
+                    
+                    selector.innerHTML += `<option value="${numParcelas}">${text}</option>`;
+                }
+            });
+
+            
+
+function calcularTotal() {
+                const numParcelas = parseInt(selector.value);
+
+                
+
+if (!numParcelas || numParcelas === 0) {
+                    
+
+condicaoItemC_Div.innerHTML = `
+                        <p class="text-sm font-medium text-gray-900">Item C (Instalação)</p>
+                        <p class="text-sm text-gray-600">Selecione uma opção acima.</p>
+                    `;
+                    totalOpcao2.textContent = totalBaseTexto;
+                    return;
+                }
+
+                
+
+const taxa = TAXAS[numParcelas];
+                const novoValorItemC = VALOR_BASE_C_AVISTA * (1 + taxa);
+                const valorDaParcela = novoValorItemC / numParcelas;
+                const novoValorTotalProposta = VALOR_BASE_A + VALOR_BASE_B + novoValorItemC;
+
+                
+
+let condicaoValorTexto;
+                // O caso numParcelas == 1 não é mais selecionável, mas o cálculo está aqui por segurança
+                if (numParcelas == 1) {
+                    condicaoValorTexto = `${formatCurrency(novoValorItemC)} (À vista)`;
+                } else {
+                    condicaoValorTexto = `${numParcelas}x de ${formatCurrency(valorDaParcela)}`;
+                }
+                
+                
+
+condicaoItemC_Div.innerHTML = `
+                    <p class="text-sm font-medium text-gray-900">Item C (Instalação)</p>
+                    <p class="text-sm text-gray-600">${condicaoValorTexto}</p>
+                `;
+                totalOpcao2.textContent = formatCurrency(novoValorTotalProposta);
+            };
+
+            
+
+selector.addEventListener('change', calcularTotal);
+
+            
+
+calcularTotal();
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
